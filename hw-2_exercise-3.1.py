@@ -50,8 +50,8 @@ matrix_x = np.linalg.solve(matrix_c_3x3, matrix_b_3x1)
 
 print(matrix_x)
 
-# numpy.linalg.solve вернет ошибку LinAlgError, если x умножен на неквадратную матрицу, т.к. у неё нет обратной. Пример (bx = C вместо Cx = b):
-# Я сначала так и сделал случайно, поэтому думать особо не пришлось...
+# numpy.linalg.solve вернет ошибку LinAlgError, если не получается вернуть обратную матрицу. Пример (bx = C вместо Cx = b, где b - неквадратная):
+# Я сначала перепутал местами C и b и получил такую ошибку, т.к. матрица b неквадратная и вычислить обратную numpy не смог
 
 matrix_b_3x1 = np.random.rand(3, 1)
 matrix_c_3x3 = np.random.rand(3, 3)
@@ -59,5 +59,11 @@ matrix_c_3x3 = np.random.rand(3, 3)
 print(matrix_b_3x1, matrix_c_3x3)
 
 matrix_x = np.linalg.solve(matrix_b_3x1, matrix_c_3x3)
+
+print(matrix_x)
+
+# Или так:
+
+matrix_x = np.linalg.solve(matrix_b_3x1, [[2,1,3],[1,0,0],[3,0,0]])
 
 print(matrix_x)
