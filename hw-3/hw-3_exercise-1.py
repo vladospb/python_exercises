@@ -1,29 +1,42 @@
 import pandas as pd
+import numpy as np
 
 df = pd.read_csv('vacancies.csv')
+#df.index = df.index + 1
 
 # 0. Выведите первые 5 и последние 5 строк датасета. Примените к датасету методы info и describe (1)
 
-print(df) # Prints 5 first and 5 last rows
-df.info() # Prints -table: numeration of columns; columns' names; sum of non-null values for such columns (we can see, that column 'salary' has 220 such values of 1527 entries); Numpy types of columns' values
-          # -list of types of columns' values
-          # -memory usage
-print(df.describe())
+#print(df[:5])
+#print(df[-5:])
+
+#df.info()
+
+#print(df.describe(include = 'all').T)
 
 # Есть ли в датасете пропуски? (1)
 
-
+#print(df.isna().sum().sum() > 0) # Выводит True. Пропуски есть
 
 # Есть в датасете полные дубли? Если да, удалите их (метод drop_duplicates). (1)
 
+#print(df.duplicated().sum() > 0) # Выводит False. Полных дублей нет
+
 # Сколько уникальных значений у переменной professional_roles? (1)
+
+#print(len(df['professional_roles'].unique())) # 36
 
 # Сколько в датасете вакансий, не требующих опыта? (2)
 
+#print(len(df[df['experience'] == 'Нет опыта'])) # 136
+
 # Какое среднее количество навыков в вакансии? (переменная key_skills) (2)
+
+#print(df['key_skills'].apply(lambda x: len(x)).mean())
 
 # Какие валюты (ключ currency в поле salary) используются для заработной платы? Создайте столбец currency. (2)
 # Подсказка. Как вариант, можете воспользоваться функцией eval, которая исполняет код, написанный в строке. Для проверки на NaN можете использовать pd.isnull()
+
+df['currency'] = df['salary'].apply(lambda x: x.split())
 
 # Какая компания лидирует по количеству вакансий? (2)
 
