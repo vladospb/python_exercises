@@ -20,11 +20,11 @@
     <ul>
         <li>ТГ-бот, возвращающий алгоритм действий для крафта предмета. Пример:</li>
         <br>
-        <img src='photo_2024-12-28_16-10-24.jpg' alt='Example of using tg-bot'></img>
+        <img src='photo_2024-12-28_16-10-24.jpg' alt='Example of using tg-bot' width="40" height="40></img>
         <br>
         <li>В разработке на данный момент: функция ТГ-бота для возвращения GIF с реализацией сложных действий действий в игре. В качестве примера подобная GIF, но с простейшим игровым действием, не требующим планирования:</li>
         <br>
-        ![](https://github.com/vladospb/python_exercises/blob/main/chop_down_the_tree,_gather_wood,_pick_up_wood,_chop_it_down,_break.gif)
+        <img src="chop_down_the_tree,_gather_wood,_pick_up_wood,_chop_it_down,_break.gif" alt='Example of GIF' width="40" height="40"/>
         <br>
     </ul>
     <h2>Лицензия</h2>
