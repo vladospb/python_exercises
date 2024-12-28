@@ -24,7 +24,7 @@
         <br>
         <li>В разработке на данный момент: функция ТГ-бота для возвращения GIF с реализацией сложных действий действий в игре. В качестве примера подобная GIF, но с простейшим игровым действием, не требующим планирования:</li>
         <br>
-        <video src='chop_down_the_tree,_gather_wood,_pick_up_wood,_chop_it_down,_break.mp4'></video>
+        <video src='chop_down_the_tree,_gather_wood,_pick_up_wood,_chop_it_down,_break.gif'></video>
         <br>
     </ul>
     <h2>Лицензия</h2>
