@@ -1,6 +1,7 @@
 <html>
 <body>
     <h1 align='center'>Планер действий в Minecraft</h1>
+    <br><br>
     <p>Добро пожаловать в наш проект по созданию планера действий для Minecraft! Этот инструмент поможет игрокам организовать свои задачи и цели в игре, делая процесс игры более увлекательным и структурированным.</p>
     <h2><strong>Куратор:</strong></h2>
     <ul>
@@ -21,7 +22,7 @@
         <li>ТГ-бот <a href='https://t.me/minecraft_planner_bot'>minecraft_planner_bot</a>, возвращающий алгоритм действий для крафта предмета. Пример:</li>
         <br>
         <img src='images/tg_bot_screen.jpg' alt='Example of using tg-bot' width='400'></img>
-        <br>
+        <br><br>
         <li>В разработке: функция ТГ-бота для возвращения GIF с реализацией сложных действий в игре. В качестве примера подобная GIF, но с простейшим игровым действием, не требующим планирования:</li>
         <br>
         <img src='images/ml_result_example.gif' alt='Example of using tg-bot' width='400'/></img>
